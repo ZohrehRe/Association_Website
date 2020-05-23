@@ -1,7 +1,9 @@
 var servicesList= document.querySelector("ul");
 fetch('https://hypergroup.herokuapp.com/v1/services')
 .then(function(response){
-    return response.json();
+    var a=response.json();
+    window.alert(a);
+    return a;
 }).then(function(json){
     for(var i=0; i<json.length; i++){
         var listItem = document.createElement("li");
