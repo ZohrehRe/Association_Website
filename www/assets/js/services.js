@@ -16,7 +16,7 @@ fetch('https://hypergroup.herokuapp.com/v1/services',{ mode: 'no-cors'})
   })
 
 */
-var servicesList= document.querySelector("ul");
+var servicesList= document.getElementById("service-list");
 fetch('https://hypergroup.herokuapp.com/v1/services')
 .then(function(response){
     var a=response.json();
