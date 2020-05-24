@@ -24,7 +24,7 @@ fetch('https://hypergroup.herokuapp.com/v1/services')
 }).then(function(json){
     for(var i=0; i<json.length; i++){
         var listItem = document.createElement("li");
-        listItem.classList.add("list-group list-group-flush");
+        listItem.className = "list-group list-group-flush";
         let {id,created_at,updated_at,name,description,photo,enabled,lastname,email} = json[i];
                 window.alert(name);
         listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-2"><img src="..." class="card-img" alt="..."></div><div class="col-md-10"><div id="'+id+'" class="card-body"><h5 class="card-title">'+name+'</h5><p class="card-text">'+description+'</p></div></div></div></div>';
