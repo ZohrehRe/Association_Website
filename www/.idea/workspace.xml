@@ -24,7 +24,7 @@
       <file leaf-file-name="services.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/services.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
+            <state relative-caret-position="-1388">
               <caret line="78" column="12" lean-forward="false" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="24" />
               <folding />
             </state>
@@ -35,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/assets/js/services.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1261">
-              <caret line="29" column="268" lean-forward="false" selection-start-line="29" selection-start-column="268" selection-end-line="29" selection-end-column="268" />
+              <caret line="29" column="211" lean-forward="false" selection-start-line="29" selection-start-column="211" selection-end-line="29" selection-end-column="211" />
               <folding />
             </state>
           </provider>
@@ -278,7 +278,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/services.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
+        <state relative-caret-position="-1388">
           <caret line="78" column="12" lean-forward="false" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="24" />
           <folding />
         </state>
@@ -287,7 +287,7 @@
     <entry file="file://$PROJECT_DIR$/assets/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1261">
-          <caret line="29" column="268" lean-forward="false" selection-start-line="29" selection-start-column="268" selection-end-line="29" selection-end-column="268" />
+          <caret line="29" column="211" lean-forward="false" selection-start-line="29" selection-start-column="211" selection-end-line="29" selection-end-column="211" />
           <folding />
         </state>
       </provider>
