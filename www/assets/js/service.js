@@ -1,2 +1,2 @@
-let id= document.locaion.search.replace(/^.*?\=/,'');
+let id= document.location.search.replace(/^.*?\=/,'');
 window.alert(id);
