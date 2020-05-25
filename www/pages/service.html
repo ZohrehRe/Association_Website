@@ -57,16 +57,15 @@
 </header>
 
 <main role="main">
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
+  <nav  aria-label="breadcrumb">
+    <ol id='breadcrumb' class="breadcrumb">
       <li class="breadcrumb-item" aria-current="page">Services</li>
-      <li class="breadcrumb-item active" aria-current="page">Service 1</li>
     </ol>
   </nav>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="../assets/img/association.png" alt="First slide">
+        <img id='img' class="d-block w-100" alt="First slide">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
              preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
           <rect width="100%" height="100%" fill="#777"/>
@@ -90,11 +89,9 @@
             <!-- START THE FEATURETTES -->
             <div class="row featurette">
               <div class="col-md-12">
-                <h2 class="featurette-heading">Service 1</h2>
+                <h2 id='name' class="featurette-heading"></h2>
                 <br>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula
-                  porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                <p id='desc' class="lead"></p>
               </div>
             </div>
             <hr class="featurette-divider">
