@@ -14,7 +14,7 @@ fetch(url)
         item.setAttribute('aria-current',"page");
         let {id,created_at,updated_at,name,description,photo,enabled} = json[i];
         item.innerHTML=name;
-        bdList.appendChild(item);
+        bcList.appendChild(item);
         document.getElementById("img").setAttribute('src',"photo");
         document.getElementById("name").innerHTML=name;
         document.getElementById("desc").innerHTML=description;
