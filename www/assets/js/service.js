@@ -1,5 +1,4 @@
 let id= document.location.search.replace(/^.*?\=/,'');
-window.alert(id);
 var url='https://hypergroup.herokuapp.com/v1/services/'+id;
 var bcList= document.getElementById('breadcrumb');
 fetch(url)
