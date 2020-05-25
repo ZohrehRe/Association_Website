@@ -11,7 +11,7 @@ fetch(url)
         var item = document.createElement("li");
         item.className = "breadcrumb-item active";
         item.id = "bcID"
-        document.getElementById("bcID").setAttribute('aria-current',"page");
+        item.setAttribute('aria-current',"page");
         let {id,created_at,updated_at,name,description,photo,enabled} = json[i];
         item.innerHTML=name;
         bdList.appendChild(item);
