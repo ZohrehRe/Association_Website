@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9a07131-b36e-4f38-ac7d-c19e1d0ab01e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/js/service-person.js" afterPath="$PROJECT_DIR$/www/assets/js/service-person.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/js/service.js" afterPath="$PROJECT_DIR$/www/assets/js/service.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="service-person.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="service-person.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/assets/js/service-person.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+            <state relative-caret-position="159">
+              <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -85,7 +83,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="service.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="service.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/assets/js/service.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1007">
@@ -147,8 +145,8 @@
         <option value="$PROJECT_DIR$/www/pages/service-person.html" />
         <option value="$PROJECT_DIR$/www/pages/service.html" />
         <option value="$PROJECT_DIR$/www/assets/js/persons.js" />
-        <option value="$PROJECT_DIR$/www/assets/js/service-person.js" />
         <option value="$PROJECT_DIR$/www/assets/js/service.js" />
+        <option value="$PROJECT_DIR$/www/assets/js/service-person.js" />
       </list>
     </option>
   </component>
@@ -455,14 +453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/assets/js/service-person.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/pages/service-person.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1466">
@@ -475,6 +465,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1007">
           <caret line="19" column="83" lean-forward="false" selection-start-line="19" selection-start-column="83" selection-end-line="19" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/js/service-person.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
           <folding />
         </state>
       </provider>
