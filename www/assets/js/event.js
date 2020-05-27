@@ -31,7 +31,7 @@ fetch('https://hypergroup.herokuapp.com/v1/events/'+id+'/related_persons')
         var item = document.createElement("a");
         item.className = "list-group-item list-group-item-action";
         let {id,created_at,updated_at,name,description,photo,enabled} = json[i];
-        item.setAttribute('href',"person.html?id='"+id+"'");
+        item.setAttribute('href',"person.html?id="+id);
         item.innerHTML=name;
         list.appendChild(item);
   }

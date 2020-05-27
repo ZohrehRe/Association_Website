@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e9a07131-b36e-4f38-ac7d-c19e1d0ab01e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/js/event.js" afterPath="$PROJECT_DIR$/www/assets/js/event.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/js/service-event.js" afterPath="$PROJECT_DIR$/www/assets/js/service-event.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/js/service-person.js" afterPath="$PROJECT_DIR$/www/assets/js/service-person.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/pages/event.html" afterPath="$PROJECT_DIR$/www/pages/event.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/www/assets/js/event.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1252">
-              <caret line="33" column="56" lean-forward="false" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+              <caret line="33" column="50" lean-forward="false" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -442,7 +439,7 @@
     <entry file="file://$PROJECT_DIR$/www/assets/js/event.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1252">
-          <caret line="33" column="56" lean-forward="false" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+          <caret line="33" column="50" lean-forward="false" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
           <folding />
         </state>
       </provider>
