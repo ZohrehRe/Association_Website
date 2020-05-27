@@ -17,6 +17,6 @@ fetch(url)
         document.getElementById("img").setAttribute('src',"photo");
         document.getElementById("name").innerHTML=name;
         document.getElementById("desc").innerHTML=description;
-        document.getElementById("persons-link").setAttribute('href',"person.html?id="+id+"/related_persons");
+        document.getElementById("persons-link").setAttribute('href',"service-person.html?id="+id+"/related_persons");
   }
   })
