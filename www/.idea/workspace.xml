@@ -11,41 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1634">
-              <caret line="181" column="9" lean-forward="false" selection-start-line="181" selection-start-column="9" selection-end-line="181" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="services.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/services.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="18" column="55" lean-forward="false" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="service.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="9" column="19" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="allEvents.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/allEvents.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="10" column="222" lean-forward="false" selection-start-line="10" selection-start-column="222" selection-end-line="10" selection-end-column="222" />
+            <state relative-caret-position="689">
+              <caret line="13" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -74,18 +44,48 @@
       <file leaf-file-name="service.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/service.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1987">
-              <caret line="92" column="27" lean-forward="false" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="27" />
+            <state relative-caret-position="556">
+              <caret line="59" column="24" lean-forward="false" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="event.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/event.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1521">
-              <caret line="65" column="25" lean-forward="false" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+            <state relative-caret-position="483">
+              <caret line="91" column="20" lean-forward="false" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="persons.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/persons.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="689">
+              <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="person.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/person.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="53">
+              <caret line="1" column="51" lean-forward="false" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="person.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/person.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="848">
+              <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -94,8 +94,8 @@
       <file leaf-file-name="event.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/event.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="48" />
+            <state relative-caret-position="477">
+              <caret line="9" column="36" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -104,8 +104,8 @@
       <file leaf-file-name="services.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/services.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-265">
-              <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="14" />
+            <state relative-caret-position="556">
+              <caret line="58" column="23" lean-forward="false" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -117,10 +117,11 @@
     <findStrings>
       <find>ul</find>
       <find>service-lis</find>
-      <find>servicesList</find>
       <find>img</find>
-      <find>name</find>
       <find>nam</find>
+      <find>name</find>
+      <find>servicesList</find>
+      <find>brea</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -140,10 +141,12 @@
         <option value="$PROJECT_DIR$/pages/allEvents.html" />
         <option value="$PROJECT_DIR$/assets/js/allEvents.js" />
         <option value="$PROJECT_DIR$/pages/event.html" />
+        <option value="$PROJECT_DIR$/assets/js/persons.js" />
+        <option value="$PROJECT_DIR$/assets/js/person.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1220" />
     <option name="y" value="530" />
     <option name="width" value="1400" />
@@ -199,6 +202,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="JAVA" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -309,7 +313,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
+    <frame x="-16" y="-16" width="3872" height="2092" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -421,23 +425,7 @@
     <entry file="file://$PROJECT_DIR$/assets/js/service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/allEvents.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="10" column="222" lean-forward="false" selection-start-line="10" selection-start-column="222" selection-end-line="10" selection-end-column="222" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/event.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="48" />
+          <caret line="9" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -450,10 +438,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/services.html">
+    <entry file="file://$PROJECT_DIR$/pages/service.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-265">
-          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="14" />
+        <state relative-caret-position="556">
+          <caret line="59" column="24" lean-forward="false" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="91" column="20" lean-forward="false" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -466,18 +462,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/service.html">
+    <entry file="file://$PROJECT_DIR$/assets/js/allEvents.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1987">
-          <caret line="92" column="27" lean-forward="false" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="27" />
+        <state relative-caret-position="689">
+          <caret line="13" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/event.html">
+    <entry file="file://$PROJECT_DIR$/pages/services.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1521">
-          <caret line="65" column="25" lean-forward="false" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+        <state relative-caret-position="556">
+          <caret line="58" column="23" lean-forward="false" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="9" column="36" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/persons.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="689">
+          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/person.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="1" column="51" lean-forward="false" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/person.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="848">
+          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
           <folding />
         </state>
       </provider>
