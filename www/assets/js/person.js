@@ -53,4 +53,4 @@ fetch('https://hypergroup.herokuapp.com/v1/persons/'+id+'/related_services')
         item.innerHTML=name;
         list2.appendChild(item);
   }
-  }
+  })
