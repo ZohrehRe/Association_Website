@@ -12,3 +12,4 @@ fetch('https://hypergroup.herokuapp.com/v1/persons')
         personsList.appendChild(listItem);
   }
   })
+
