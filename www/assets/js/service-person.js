@@ -1,9 +1,7 @@
 let str2= document.location.search.replace(/^.*?\=/,'');
-window.alert(str2);
 var id;
 var end = str2.lastIndexOf("/");
 if (end >= 0) { id = str2.substring(0, end); }
-window.alert(id);
 var personsList= document.getElementById("person-list");
 fetch('https://hypergroup.herokuapp.com/v1/services/'+id+'/related_persons')
 .then(function(response){
