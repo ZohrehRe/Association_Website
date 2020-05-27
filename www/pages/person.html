@@ -58,23 +58,20 @@
 
 <main role="main">
   <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
+    <ol id='breadcrumb' class="breadcrumb">
       <li class="breadcrumb-item" aria-current="page">Persons</li>
-      <li class="breadcrumb-item active" aria-current="page">Person 1</li>
     </ol>
   </nav>
   <div class="container marketing">
     <!-- START THE FEATURETTES -->
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">Person 1</h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula
-          porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl
-          consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <h2 id='name' class="featurette-heading"></h2>
+        <p id='desc' class="lead"></p>
       </div>
       <div class="col-md-5">
         <br>
-        <svg class="bd-placeholder-img rounded-circle bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+        <svg id='img' class="bd-placeholder-img rounded-circle bd-placeholder-img-lg featurette-image img-fluid mx-auto"
              width="350" height="350" xmlns="http://www.w3.org/2000/svg"
              preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
              aria-label="Placeholder: 500x500"><title>Placeholder</title>
@@ -139,5 +136,7 @@
         crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
 <script src="../assets/js/bootstrap.bundle.js"></script>
+<script src="../assets/js/person.js"></script>
+
 </body>
 </html>
