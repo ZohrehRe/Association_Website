@@ -18,5 +18,7 @@ fetch(url)
         document.getElementById("name").innerHTML=name;
         document.getElementById("desc").innerHTML=description;
         document.getElementById("persons-link").setAttribute('href',"service-person.html?id="+id+"/related_persons");
+        document.getElementById("events-link").setAttribute('href',"service-event.html?id="+id+"/related_events");
+
   }
   })
