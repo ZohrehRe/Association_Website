@@ -7,3 +7,7 @@ jQuery(document).ready(function ($) {
 document.getElementById("drop").onclick=function() {
 window.alert(document.getElementById('drop').value);
 }
+document.getElementById("Jan").onclick=function() {
+window.alert("jan3");
+}
+
