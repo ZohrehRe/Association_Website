@@ -1,3 +1,9 @@
-document.getElementById("drop").onchange=function() {
+jQuery(document).ready(function ($) {
+      jQuery(".dropdown-menu li").click(function(){
+            var sel=$(this).text();
+            alert(sel);
+       });
+});
+document.getElementById("drop").onclick=function() {
 window.alert(document.getElementById('drop').value);
 }
