@@ -1,5 +1,5 @@
-document.getElementById("Jan").onclick=function() {
 var eventsList= document.getElementById("event-list");
+document.getElementById("Jan").onclick=function() {
 fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Jan')
 .then(function(response){
     var a=response.json();
@@ -14,7 +14,6 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Jan')
   }
   })}
 document.getElementById("Feb").onclick=function() {
-var eventsList= document.getElementById("event-list");
 fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Feb')
 .then(function(response){
     var a=response.json();
@@ -29,7 +28,6 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Feb')
   }
   })}
 document.getElementById("Mar").onclick=function() {
-var eventsList= document.getElementById("event-list");
 fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Mar')
 .then(function(response){
     var a=response.json();
@@ -44,7 +42,6 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Mar')
   }
   })}
 document.getElementById("Apr").onclick=function() {
-var eventsList= document.getElementById("event-list");
 fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Apr')
 .then(function(response){
     var a=response.json();
@@ -59,7 +56,6 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Apr')
   }
   })}
 document.getElementById("May").onclick=function() {
-var eventsList= document.getElementById("event-list");
 fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/May')
 .then(function(response){
     var a=response.json();
@@ -74,7 +70,6 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/May')
   }
   })}
 document.getElementById("Jun").onclick=function() {
-var eventsList= document.getElementById("event-list");
 fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Jun')
 .then(function(response){
     var a=response.json();
@@ -89,7 +84,6 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Jun')
   }
   })}
 document.getElementById("Jul").onclick=function() {
-var eventsList= document.getElementById("event-list");
 fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Jul')
 .then(function(response){
     var a=response.json();
@@ -104,7 +98,6 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Jul')
   }
   })}
 document.getElementById("Aug").onclick=function() {
-var eventsList= document.getElementById("event-list");
 fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Aug')
 .then(function(response){
     var a=response.json();
@@ -119,7 +112,6 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Aug')
   }
   })}
 document.getElementById("Sep").onclick=function() {
-var eventsList= document.getElementById("event-list");
 fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Sep')
 .then(function(response){
     var a=response.json();
@@ -134,7 +126,6 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Sep')
   }
   })}
 document.getElementById("Oct").onclick=function() {
-var eventsList= document.getElementById("event-list");
 fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Oct')
 .then(function(response){
     var a=response.json();
@@ -149,7 +140,6 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Oct')
   }
   })}
 document.getElementById("Nov").onclick=function() {
-var eventsList= document.getElementById("event-list");
 fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Nov')
 .then(function(response){
     var a=response.json();
@@ -164,7 +154,6 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Nov')
   }
   })}
 document.getElementById("Dec").onclick=function() {
-var eventsList= document.getElementById("event-list");
 fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Dec')
 .then(function(response){
     var a=response.json();
