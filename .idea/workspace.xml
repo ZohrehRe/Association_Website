@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9a07131-b36e-4f38-ac7d-c19e1d0ab01e" name="Default" comment="" />
+    <list default="true" id="e9a07131-b36e-4f38-ac7d-c19e1d0ab01e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/pages/eventsByMonth.html" afterPath="$PROJECT_DIR$/www/pages/eventsByMonth.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,8 +46,8 @@
       <file leaf-file-name="eventsByMonth.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/pages/eventsByMonth.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="96" column="4" lean-forward="true" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="4" />
+            <state relative-caret-position="477">
+              <caret line="97" column="22" lean-forward="true" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -163,8 +165,8 @@
         <option value="$PROJECT_DIR$/www/assets/js/persons.js" />
         <option value="$PROJECT_DIR$/www/pages/person.html" />
         <option value="$PROJECT_DIR$/www/assets/js/person.js" />
-        <option value="$PROJECT_DIR$/www/pages/eventsByMonth.html" />
         <option value="$PROJECT_DIR$/www/assets/js/eventsByMonth.js" />
+        <option value="$PROJECT_DIR$/www/pages/eventsByMonth.html" />
       </list>
     </option>
   </component>
@@ -559,8 +561,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/pages/eventsByMonth.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="96" column="4" lean-forward="true" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="4" />
+        <state relative-caret-position="477">
+          <caret line="97" column="22" lean-forward="true" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
           <folding />
         </state>
       </provider>
