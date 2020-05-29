@@ -178,4 +178,10 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Dec')
         listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-2"><img src="..." class="card-img" alt="..."></div><div class="col-md-10"><div id="'+id+'" class="card-body"><a href="event.html?id='+id+'"><h5 class="card-title">'+name+'</h5></a><p class="card-text">'+description+'</p></div></div></div></div>';
         eventsList.appendChild(listItem);
   }
+  if(json.length == 0){
+  var listItem = document.createElement("li");
+          listItem.className = "list-group list-group-flush";
+          listItem.innerHTML='<div class="alert alert-warning" role="alert">There is no event in this month! :(</div>'
+          eventsList.appendChild(listItem);
+  }
   })}
