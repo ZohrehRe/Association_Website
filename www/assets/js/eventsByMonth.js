@@ -13,6 +13,12 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Jan')
         listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-2"><img src="..." class="card-img" alt="..."></div><div class="col-md-10"><div id="'+id+'" class="card-body"><a href="event.html?id='+id+'"><h5 class="card-title">'+name+'</h5></a><p class="card-text">'+description+'</p></div></div></div></div>';
         eventsList.appendChild(listItem);
   }
+    if(json.length == 0){
+    var listItem = document.createElement("li");
+            listItem.className = "list-group list-group-flush";
+            listItem.innerHTML='<div class="alert alert-danger" role="alert">There is no event in this month! :(</div>'
+            eventsList.appendChild(listItem);
+    }
   })}
 document.getElementById("Feb").onclick=function() {
 document.getElementById("event-list").innerHTML = "";
@@ -28,6 +34,12 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Feb')
         listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-2"><img src="..." class="card-img" alt="..."></div><div class="col-md-10"><div id="'+id+'" class="card-body"><a href="event.html?id='+id+'"><h5 class="card-title">'+name+'</h5></a><p class="card-text">'+description+'</p></div></div></div></div>';
         eventsList.appendChild(listItem);
   }
+    if(json.length == 0){
+    var listItem = document.createElement("li");
+            listItem.className = "list-group list-group-flush";
+            listItem.innerHTML='<div class="alert alert-danger" role="alert">There is no event in this month! :(</div>'
+            eventsList.appendChild(listItem);
+    }
   })}
 document.getElementById("Mar").onclick=function() {
 document.getElementById("event-list").innerHTML = "";
@@ -43,6 +55,12 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Mar')
         listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-2"><img src="..." class="card-img" alt="..."></div><div class="col-md-10"><div id="'+id+'" class="card-body"><a href="event.html?id='+id+'"><h5 class="card-title">'+name+'</h5></a><p class="card-text">'+description+'</p></div></div></div></div>';
         eventsList.appendChild(listItem);
   }
+    if(json.length == 0){
+    var listItem = document.createElement("li");
+            listItem.className = "list-group list-group-flush";
+            listItem.innerHTML='<div class="alert alert-danger" role="alert">There is no event in this month! :(</div>'
+            eventsList.appendChild(listItem);
+    }
   })}
 document.getElementById("Apr").onclick=function() {
 document.getElementById("event-list").innerHTML = "";
@@ -58,6 +76,12 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Apr')
         listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-2"><img src="..." class="card-img" alt="..."></div><div class="col-md-10"><div id="'+id+'" class="card-body"><a href="event.html?id='+id+'"><h5 class="card-title">'+name+'</h5></a><p class="card-text">'+description+'</p></div></div></div></div>';
         eventsList.appendChild(listItem);
   }
+    if(json.length == 0){
+    var listItem = document.createElement("li");
+            listItem.className = "list-group list-group-flush";
+            listItem.innerHTML='<div class="alert alert-danger" role="alert">There is no event in this month! :(</div>'
+            eventsList.appendChild(listItem);
+    }
   })}
 document.getElementById("May").onclick=function() {
 document.getElementById("event-list").innerHTML = "";
@@ -73,6 +97,12 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/May')
         listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-2"><img src="..." class="card-img" alt="..."></div><div class="col-md-10"><div id="'+id+'" class="card-body"><a href="event.html?id='+id+'"><h5 class="card-title">'+name+'</h5></a><p class="card-text">'+description+'</p></div></div></div></div>';
         eventsList.appendChild(listItem);
   }
+    if(json.length == 0){
+    var listItem = document.createElement("li");
+            listItem.className = "list-group list-group-flush";
+            listItem.innerHTML='<div class="alert alert-danger" role="alert">There is no event in this month! :(</div>'
+            eventsList.appendChild(listItem);
+    }
   })}
 document.getElementById("Jun").onclick=function() {
 document.getElementById("event-list").innerHTML = "";
@@ -88,6 +118,12 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Jun')
         listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-2"><img src="..." class="card-img" alt="..."></div><div class="col-md-10"><div id="'+id+'" class="card-body"><a href="event.html?id='+id+'"><h5 class="card-title">'+name+'</h5></a><p class="card-text">'+description+'</p></div></div></div></div>';
         eventsList.appendChild(listItem);
   }
+    if(json.length == 0){
+    var listItem = document.createElement("li");
+            listItem.className = "list-group list-group-flush";
+            listItem.innerHTML='<div class="alert alert-danger" role="alert">There is no event in this month! :(</div>'
+            eventsList.appendChild(listItem);
+    }
   })}
 document.getElementById("Jul").onclick=function() {
 document.getElementById("event-list").innerHTML = "";
@@ -103,6 +139,12 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Jul')
         listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-2"><img src="..." class="card-img" alt="..."></div><div class="col-md-10"><div id="'+id+'" class="card-body"><a href="event.html?id='+id+'"><h5 class="card-title">'+name+'</h5></a><p class="card-text">'+description+'</p></div></div></div></div>';
         eventsList.appendChild(listItem);
   }
+    if(json.length == 0){
+    var listItem = document.createElement("li");
+            listItem.className = "list-group list-group-flush";
+            listItem.innerHTML='<div class="alert alert-danger" role="alert">There is no event in this month! :(</div>'
+            eventsList.appendChild(listItem);
+    }
   })}
 document.getElementById("Aug").onclick=function() {
 document.getElementById("event-list").innerHTML = "";
@@ -118,6 +160,12 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Aug')
         listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-2"><img src="..." class="card-img" alt="..."></div><div class="col-md-10"><div id="'+id+'" class="card-body"><a href="event.html?id='+id+'"><h5 class="card-title">'+name+'</h5></a><p class="card-text">'+description+'</p></div></div></div></div>';
         eventsList.appendChild(listItem);
   }
+    if(json.length == 0){
+    var listItem = document.createElement("li");
+            listItem.className = "list-group list-group-flush";
+            listItem.innerHTML='<div class="alert alert-danger" role="alert">There is no event in this month! :(</div>'
+            eventsList.appendChild(listItem);
+    }
   })}
 document.getElementById("Sep").onclick=function() {
 document.getElementById("event-list").innerHTML = "";
@@ -133,6 +181,12 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Sep')
         listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-2"><img src="..." class="card-img" alt="..."></div><div class="col-md-10"><div id="'+id+'" class="card-body"><a href="event.html?id='+id+'"><h5 class="card-title">'+name+'</h5></a><p class="card-text">'+description+'</p></div></div></div></div>';
         eventsList.appendChild(listItem);
   }
+    if(json.length == 0){
+    var listItem = document.createElement("li");
+            listItem.className = "list-group list-group-flush";
+            listItem.innerHTML='<div class="alert alert-danger" role="alert">There is no event in this month! :(</div>'
+            eventsList.appendChild(listItem);
+    }
   })}
 document.getElementById("Oct").onclick=function() {
 document.getElementById("event-list").innerHTML = "";
@@ -148,6 +202,12 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Oct')
         listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-2"><img src="..." class="card-img" alt="..."></div><div class="col-md-10"><div id="'+id+'" class="card-body"><a href="event.html?id='+id+'"><h5 class="card-title">'+name+'</h5></a><p class="card-text">'+description+'</p></div></div></div></div>';
         eventsList.appendChild(listItem);
   }
+    if(json.length == 0){
+    var listItem = document.createElement("li");
+            listItem.className = "list-group list-group-flush";
+            listItem.innerHTML='<div class="alert alert-danger" role="alert">There is no event in this month! :(</div>'
+            eventsList.appendChild(listItem);
+    }
   })}
 document.getElementById("Nov").onclick=function() {
 document.getElementById("event-list").innerHTML = "";
@@ -163,6 +223,12 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Nov')
         listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-2"><img src="..." class="card-img" alt="..."></div><div class="col-md-10"><div id="'+id+'" class="card-body"><a href="event.html?id='+id+'"><h5 class="card-title">'+name+'</h5></a><p class="card-text">'+description+'</p></div></div></div></div>';
         eventsList.appendChild(listItem);
   }
+    if(json.length == 0){
+    var listItem = document.createElement("li");
+            listItem.className = "list-group list-group-flush";
+            listItem.innerHTML='<div class="alert alert-danger" role="alert">There is no event in this month! :(</div>'
+            eventsList.appendChild(listItem);
+    }
   })}
 document.getElementById("Dec").onclick=function() {
 document.getElementById("event-list").innerHTML = "";
@@ -181,7 +247,7 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Dec')
   if(json.length == 0){
   var listItem = document.createElement("li");
           listItem.className = "list-group list-group-flush";
-          listItem.innerHTML='<div class="alert alert-warning" role="alert">There is no event in this month! :(</div>'
+          listItem.innerHTML='<div class="alert alert-danger" role="alert">There is no event in this month! :(</div>'
           eventsList.appendChild(listItem);
   }
   })}

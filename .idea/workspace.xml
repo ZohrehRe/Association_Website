@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9a07131-b36e-4f38-ac7d-c19e1d0ab01e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/pages/eventsByMonth.html" afterPath="$PROJECT_DIR$/www/pages/eventsByMonth.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/js/eventsByMonth.js" afterPath="$PROJECT_DIR$/www/assets/js/eventsByMonth.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eventsByMonth.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="eventsByMonth.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/pages/eventsByMonth.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
+            <state relative-caret-position="475">
               <caret line="97" column="22" lean-forward="true" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
               <folding />
             </state>
@@ -73,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eventsByMonth.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="eventsByMonth.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/assets/js/eventsByMonth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1305">
-              <caret line="183" column="111" lean-forward="false" selection-start-line="183" selection-start-column="111" selection-end-line="183" selection-end-column="111" />
+            <state relative-caret-position="1060">
+              <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -165,8 +165,8 @@
         <option value="$PROJECT_DIR$/www/assets/js/persons.js" />
         <option value="$PROJECT_DIR$/www/pages/person.html" />
         <option value="$PROJECT_DIR$/www/assets/js/person.js" />
-        <option value="$PROJECT_DIR$/www/assets/js/eventsByMonth.js" />
         <option value="$PROJECT_DIR$/www/pages/eventsByMonth.html" />
+        <option value="$PROJECT_DIR$/www/assets/js/eventsByMonth.js" />
       </list>
     </option>
   </component>
@@ -551,18 +551,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/assets/js/eventsByMonth.js">
+    <entry file="file://$PROJECT_DIR$/www/pages/eventsByMonth.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="183" column="111" lean-forward="false" selection-start-line="183" selection-start-column="111" selection-end-line="183" selection-end-column="111" />
+        <state relative-caret-position="475">
+          <caret line="97" column="22" lean-forward="true" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/pages/eventsByMonth.html">
+    <entry file="file://$PROJECT_DIR$/www/assets/js/eventsByMonth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="97" column="22" lean-forward="true" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+        <state relative-caret-position="1060">
+          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding />
         </state>
       </provider>
