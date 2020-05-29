@@ -26,7 +26,7 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Feb')
         listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-2"><img src="..." class="card-img" alt="..."></div><div class="col-md-10"><div id="'+id+'" class="card-body"><a href="event.html?id='+id+'"><h5 class="card-title">'+name+'</h5></a><p class="card-text">'+description+'</p></div></div></div></div>';
         eventsList.appendChild(listItem);
   }
-  })}}
+  })}
 document.getElementById("Mar").onclick=function() {
 fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Mar')
 .then(function(response){
@@ -40,7 +40,7 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Mar')
         listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-2"><img src="..." class="card-img" alt="..."></div><div class="col-md-10"><div id="'+id+'" class="card-body"><a href="event.html?id='+id+'"><h5 class="card-title">'+name+'</h5></a><p class="card-text">'+description+'</p></div></div></div></div>';
         eventsList.appendChild(listItem);
   }
-  })}}
+  })}
 document.getElementById("Apr").onclick=function() {
 fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Apr')
 .then(function(response){
@@ -54,7 +54,7 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Apr')
         listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-2"><img src="..." class="card-img" alt="..."></div><div class="col-md-10"><div id="'+id+'" class="card-body"><a href="event.html?id='+id+'"><h5 class="card-title">'+name+'</h5></a><p class="card-text">'+description+'</p></div></div></div></div>';
         eventsList.appendChild(listItem);
   }
-  })}}
+  })}
 document.getElementById("May").onclick=function() {
 fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/May')
 .then(function(response){
@@ -68,7 +68,7 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/May')
         listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-2"><img src="..." class="card-img" alt="..."></div><div class="col-md-10"><div id="'+id+'" class="card-body"><a href="event.html?id='+id+'"><h5 class="card-title">'+name+'</h5></a><p class="card-text">'+description+'</p></div></div></div></div>';
         eventsList.appendChild(listItem);
   }
-  })}}
+  })}
 document.getElementById("Jun").onclick=function() {
 fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Jun')
 .then(function(response){
@@ -83,7 +83,6 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Jun')
         eventsList.appendChild(listItem);
   }
   })}
-}
 document.getElementById("Jul").onclick=function() {
 fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Jul')
 .then(function(response){
@@ -97,7 +96,7 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Jul')
         listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-2"><img src="..." class="card-img" alt="..."></div><div class="col-md-10"><div id="'+id+'" class="card-body"><a href="event.html?id='+id+'"><h5 class="card-title">'+name+'</h5></a><p class="card-text">'+description+'</p></div></div></div></div>';
         eventsList.appendChild(listItem);
   }
-  })}}
+  })}
 document.getElementById("Aug").onclick=function() {
 fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Aug')
 .then(function(response){
@@ -112,7 +111,6 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Aug')
         eventsList.appendChild(listItem);
   }
   })}
-}
 document.getElementById("Sep").onclick=function() {
 fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Sep')
 .then(function(response){
@@ -126,7 +124,7 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Sep')
         listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-2"><img src="..." class="card-img" alt="..."></div><div class="col-md-10"><div id="'+id+'" class="card-body"><a href="event.html?id='+id+'"><h5 class="card-title">'+name+'</h5></a><p class="card-text">'+description+'</p></div></div></div></div>';
         eventsList.appendChild(listItem);
   }
-  })}}
+  })}
 document.getElementById("Oct").onclick=function() {
 fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Oct')
 .then(function(response){
@@ -141,7 +139,6 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Oct')
         eventsList.appendChild(listItem);
   }
   })}
-}
 document.getElementById("Nov").onclick=function() {
 fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Nov')
 .then(function(response){
@@ -155,7 +152,7 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Nov')
         listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-2"><img src="..." class="card-img" alt="..."></div><div class="col-md-10"><div id="'+id+'" class="card-body"><a href="event.html?id='+id+'"><h5 class="card-title">'+name+'</h5></a><p class="card-text">'+description+'</p></div></div></div></div>';
         eventsList.appendChild(listItem);
   }
-  })}}
+  })}
 document.getElementById("Dec").onclick=function() {
 fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Dec')
 .then(function(response){
@@ -169,4 +166,4 @@ fetch('https://hypergroup.herokuapp.com/v1/events/bymonth/Dec')
         listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-2"><img src="..." class="card-img" alt="..."></div><div class="col-md-10"><div id="'+id+'" class="card-body"><a href="event.html?id='+id+'"><h5 class="card-title">'+name+'</h5></a><p class="card-text">'+description+'</p></div></div></div></div>';
         eventsList.appendChild(listItem);
   }
-  })}}
+  })}
