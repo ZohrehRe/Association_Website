@@ -405,8 +405,8 @@ definitions:
       name: "How to cope with misbehaviour as a parent"
       description: "In this event we are going to talk about the bad temper of the\
         \ childrens and how the parents should react to it."
-      photo: "photo"
-      id: 0
+      photo: "path to the photo"
+      id: 1001
       endAt: "2000-01-23T04:56:07.000+00:00"
       enabled: true
       startAt: "2000-01-23T04:56:07.000+00:00"
@@ -453,9 +453,9 @@ definitions:
       createdAt: "2000-01-23T04:56:07.000+00:00"
       name: "Alex"
       description: "Alex is an internal doctor. Specialized for children."
-      photo: "photo"
-      id: 0
-      email: "email"
+      photo: "path to the photo"
+      id: 101
+      email: "alex@gmail.com"
       enabled: true
       lastname: "Ridolfex"
       updatedAt: "2000-01-23T04:56:07.000+00:00"
@@ -496,8 +496,8 @@ definitions:
       name: "How to play with autistic childrens"
       description: "In this service we explain to you how to play with autistic childrens\
         \ workshop through a lot of examples and workshops."
-      photo: "photo"
-      id: 0
+      photo: "path to the photo"
+      id: 201
       enabled: true
       updatedAt: "2000-01-23T04:56:07.000+00:00"
   Error:
