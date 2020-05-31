@@ -16,6 +16,13 @@ fetch('https://hypergroup.herokuapp.com/v1/services/'+id+'/related_events')
 
     //change breadcrumps
     var bc= document.getElementById("bc");
+
+    var li0 = document.createElement("li");
+    li0.className = "breadcrumb-item";
+    li0.setAttribute('aria-current',"page");
+    li0.innerHTML='<a href="services.html">'+Services+'</a>';
+    bc.appendChild(li0);
+
     var li = document.createElement("li");
     li.className = "breadcrumb-item";
     li.setAttribute('aria-current',"page");
