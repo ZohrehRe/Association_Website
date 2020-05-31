@@ -8,6 +8,26 @@ fetch('https://hypergroup.herokuapp.com/v1/services/'+id+'/related_events')
     var a=response.json();
     return a;
 }).then(function(json){
+    //change title
+    var ti= document.getElementById("title");
+    ti.innerHTML="All Events Related To Service" + id;
+    var te= document.getElementById("text");
+    ti.innerHTML="Here you can find All events that are related to service" + id;
+    //change breadcrumps
+    var bc= document.getElementById("bc");
+    var li = document.createElement("li");
+    li.className = "breadcrumb-item";
+    li.setAttribute('aria-current',"page");
+    var n="service " + id;
+    li.innerHTML='<a href="service.html?id="'+id+'>'+n+'</a>';
+    bc.appendChild(li);
+
+    var li2 = document.createElement("li");
+        li2.className = "breadcrumb-item active";
+        li2.setAttribute('aria-current',"page");
+        li2.innerHTML="events";
+        bc.appendChild(li2);
+
     for(var i=0; i<json.length; i++){
         var listItem = document.createElement("li");
         listItem.className = "list-group list-group-flush";
