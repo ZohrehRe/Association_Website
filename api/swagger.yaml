@@ -4,8 +4,8 @@ info:
   title: HyperGroup
   description: 'A simple website for a voluntary association.'
   contact:
-    name: "HyperGroup Members"
-host: "hypergroup.herokuapp.com"
+    name: HyperGroup Members
+host: hypergroup.herokuapp.com
 basePath: /v1
 schemes:
   - https
