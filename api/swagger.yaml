@@ -1,441 +1,509 @@
-swagger: '2.0'
+---
+swagger: "2.0"
 info:
-  version: '1.0.0'
-  title: HyperGroup
-  description: 'A simple website for a voluntary association.'
+  description: "A simple website for a voluntary association."
+  version: "1.0.0"
+  title: "HyperGroup"
   contact:
-    name: HyperGroup Members
-host: hypergroup.herokuapp.com
-basePath: /v1
-schemes:
-  - https
-produces:
-  - application/json
-consumes:
-  - application/json
+    name: "HyperGroup Members"
+host: "hypergroup.herokuapp.com"
+basePath: "/v1"
 tags:
-  - name: event
-    description: Events hold by the Association
-  - name: person
-    description: Persons (volunteers) who are working in the Association
-  - name: service
-    description: Services provided by the Association
+- name: "event"
+  description: "Events hold by the Association"
+- name: "person"
+  description: "Persons (volunteers) who are working in the Association"
+- name: "service"
+  description: "Services provided by the Association"
+schemes:
+- "https"
+consumes:
+- "application/json"
+produces:
+- "application/json"
 paths:
   /events:
     get:
-      summary: Get the list of Events of the association
-      description: 'Retrieves the names, descriptions, and details of the all events.'
       tags:
-        - event
+      - "event"
+      summary: "Get the list of Events of the association"
+      description: "Retrieves the names, descriptions, and details of the all events."
+      operationId: "eventsGET"
       parameters:
-        - name: offset
-          in: query
-          description: Pagination offset. Default is 0.
-          type: integer
-        - name: limit
-          in: query
-          description: Maximum number of items per page. Default is 5 and cannot exceed 100.
-          type: integer
+      - name: "offset"
+        in: "query"
+        description: "Pagination offset. Default is 0."
+        required: false
+        type: "integer"
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of items per page. Default is 5 and cannot exceed\
+          \ 100."
+        required: false
+        type: "integer"
       responses:
-        '200':
-          description: A collection of events
+        "200":
+          description: "A collection of events"
           schema:
-            $ref: '#/definitions/Events'
+            $ref: "#/definitions/Events"
         default:
-          description: Unexpected error
+          description: "Unexpected error"
           schema:
-            $ref: '#/definitions/Error'
-  '/events/{id}':
+            $ref: "#/definitions/Error"
+      x-swagger-router-controller: "Event"
+  /events/{id}:
     get:
-      summary: Get the details of an Event by providing it's ID
-      description: 'Retrieves the name, description, and details of an event by specifying its UUID.'
       tags:
-        - event
+      - "event"
+      summary: "Get the details of an Event by providing it's ID"
+      description: "Retrieves the name, description, and details of an event by specifying\
+        \ its UUID."
+      operationId: "eventsIdGET"
       parameters:
-        - name: id
-          in: path
-          description: The UUID of the event to retrieve
-          required: true
-          type: string
+      - name: "id"
+        in: "path"
+        description: "The UUID of the event to retrieve"
+        required: true
+        type: "string"
       responses:
-        '200':
-          description: An event
+        "200":
+          description: "An event"
           schema:
-            $ref: '#/definitions/Event'
+            $ref: "#/definitions/Event"
         default:
-          description: Unexpected error
+          description: "Unexpected error"
           schema:
-            $ref: '#/definitions/Error'
-  '/events/bymonth/{month}':
+            $ref: "#/definitions/Error"
+      x-swagger-router-controller: "Event"
+  /events/bymonth/{month}:
     get:
-      summary: Get all the events of a specific month
-      description: 'Provide the name of the month of interest and get all the events related to that month.'
       tags:
-        - event
+      - "event"
+      summary: "Get all the events of a specific month"
+      description: "Provide the name of the month of interest and get all the events\
+        \ related to that month."
+      operationId: "eventsBymonthMonthGET"
       parameters:
-        - name: month
-          in: path
-          description: The name of the month of interest to retrive the related events
-          required: true
-          type: string
-          enum:
-            - Jan
-            - Feb
-            - Mar
-            - Apr
-            - May
-            - Jun
-            - Jul
-            - Aug
-            - Sep
-            - Oct
-            - Nov
-            - Dec
+      - name: "month"
+        in: "path"
+        description: "The name of the month of interest to retrive the related events"
+        required: true
+        type: "string"
+        enum:
+        - "Jan"
+        - "Feb"
+        - "Mar"
+        - "Apr"
+        - "May"
+        - "Jun"
+        - "Jul"
+        - "Aug"
+        - "Sep"
+        - "Oct"
+        - "Nov"
+        - "Dec"
       responses:
-        '200':
-          description: List of Events of the specified month
+        "200":
+          description: "List of Events of the specified month"
           schema:
-            $ref: '#/definitions/Events'
+            $ref: "#/definitions/Events"
         default:
-          description: Unexpected error
+          description: "Unexpected error"
           schema:
-            $ref: '#/definitions/Error'      
-  '/events/{id}/related_persons':
+            $ref: "#/definitions/Error"
+      x-swagger-router-controller: "Event"
+  /events/{id}/related_persons:
     get:
-      summary: Get the list of the Persons Associated with an Event
-      description: Retrieves a list of Persons associated with a specific Event.
       tags:
-        - event
+      - "event"
+      summary: "Get the list of the Persons Associated with an Event"
+      description: "Retrieves a list of Persons associated with a specific Event."
+      operationId: "eventsIdRelated_personsGET"
       parameters:
-        - name: id
-          in: path
-          description: The UUID of the event to retrieve persons for
-          required: true
-          type: string
+      - name: "id"
+        in: "path"
+        description: "The UUID of the event to retrieve persons for"
+        required: true
+        type: "string"
       responses:
-        '200':
-          description: Related Persons of the specified Event
+        "200":
+          description: "Related Persons of the specified Event"
           schema:
-            $ref: '#/definitions/Persons'
+            $ref: "#/definitions/Persons"
         default:
-          description: Unexpected error
+          description: "Unexpected error"
           schema:
-            $ref: '#/definitions/Error'
-  '/events/{id}/related_services':
+            $ref: "#/definitions/Error"
+      x-swagger-router-controller: "Event"
+  /events/{id}/related_services:
     get:
-      summary: Get the list of the related Services Associated with an Event
-      description: Retrieves a collection of Services associated with a specific Event.
       tags:
-        - event
+      - "event"
+      summary: "Get the list of the related Services Associated with an Event"
+      description: "Retrieves a collection of Services associated with a specific\
+        \ Event."
+      operationId: "eventsIdRelated_servicesGET"
       parameters:
-        - name: id
-          in: path
-          description: The UUID of the event to retrieve related Services for
-          required: true
-          type: string
+      - name: "id"
+        in: "path"
+        description: "The UUID of the event to retrieve related Services for"
+        required: true
+        type: "string"
       responses:
-        '200':
-          description: The related related Services of the specified Event
+        "200":
+          description: "The related related Services of the specified Event"
           schema:
-            $ref: '#/definitions/Services'
+            $ref: "#/definitions/Services"
         default:
-          description: Unexpected error
+          description: "Unexpected error"
           schema:
-            $ref: '#/definitions/Error'
+            $ref: "#/definitions/Error"
+      x-swagger-router-controller: "Event"
   /persons:
     get:
-      summary: Get the list of the persons (volunteers) of the association
-      description: 'Retrieves the names, descriptions, and details of all the persons in the association.'
       tags:
-        - person
+      - "person"
+      summary: "Get the list of the persons (volunteers) of the association"
+      description: "Retrieves the names, descriptions, and details of all the persons\
+        \ in the association."
+      operationId: "personsGET"
       parameters:
-        - name: offset
-          in: query
-          description: Pagination offset. Default is 0.
-          type: integer
-        - name: limit
-          in: query
-          description: Maximum number of items per page. Default is 5 and cannot exceed 100.
-          type: integer
+      - name: "offset"
+        in: "query"
+        description: "Pagination offset. Default is 0."
+        required: false
+        type: "integer"
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of items per page. Default is 5 and cannot exceed\
+          \ 100."
+        required: false
+        type: "integer"
       responses:
-        '200':
-          description: List of persons
+        "200":
+          description: "List of persons"
           schema:
-            $ref: '#/definitions/Persons'
+            $ref: "#/definitions/Persons"
         default:
-          description: Unexpected error
+          description: "Unexpected error"
           schema:
-            $ref: '#/definitions/Error'
-  '/persons/{id}':
+            $ref: "#/definitions/Error"
+      x-swagger-router-controller: "Person"
+  /persons/{id}:
     get:
-      summary: Get the information of a person in the association by providing his or her ID
-      description: 'Retrieves the name, description, and UUID of a person by specifying its UUID.'
       tags:
-        - person
+      - "person"
+      summary: "Get the information of a person in the association by providing his\
+        \ or her ID"
+      description: "Retrieves the name, description, and UUID of a person by specifying\
+        \ its UUID."
+      operationId: "personsIdGET"
       parameters:
-        - name: id
-          in: path
-          description: The UUID of the person to retrieve
-          required: true
-          type: string
+      - name: "id"
+        in: "path"
+        description: "The UUID of the person to retrieve"
+        required: true
+        type: "string"
       responses:
-        '200':
-          description: A Person
+        "200":
+          description: "A Person"
           schema:
-            $ref: '#/definitions/Person'
+            $ref: "#/definitions/Person"
         default:
-          description: Unexpected error
+          description: "Unexpected error"
           schema:
-            $ref: '#/definitions/Error'
-  '/persons/{id}/related_services':
+            $ref: "#/definitions/Error"
+      x-swagger-router-controller: "Person"
+  /persons/{id}/related_services:
     get:
-      summary: Get the list of Services Associated with a Person
-      description: Retrieves a list of Services associated with a specified Person.
       tags:
-        - person
+      - "person"
+      summary: "Get the list of Services Associated with a Person"
+      description: "Retrieves a list of Services associated with a specified Person."
+      operationId: "personsIdRelated_servicesGET"
       parameters:
-        - name: id
-          in: path
-          description: The UUID of the person to retrieve services for
-          required: true
-          type: string
+      - name: "id"
+        in: "path"
+        description: "The UUID of the person to retrieve services for"
+        required: true
+        type: "string"
       responses:
-        '200':
-          description: List of related services to a specific Person
+        "200":
+          description: "List of related services to a specific Person"
           schema:
-            $ref: '#/definitions/Services'
+            $ref: "#/definitions/Services"
         default:
-          description: Unexpected error
+          description: "Unexpected error"
           schema:
-            $ref: '#/definitions/Error'
-  '/persons/{id}/related_Events':
+            $ref: "#/definitions/Error"
+      x-swagger-router-controller: "Person"
+  /persons/{id}/related_Events:
     get:
-      summary: Get the list of Events Associated with a Person
-      description: Retrieves a collection of Events associated with a specified Person.
       tags:
-        - person
+      - "person"
+      summary: "Get the list of Events Associated with a Person"
+      description: "Retrieves a collection of Events associated with a specified Person."
+      operationId: "personsIdRelated_EventsGET"
       parameters:
-        - name: id
-          in: path
-          description: The UUID of the person to retrieve related Events for
-          required: true
-          type: string
+      - name: "id"
+        in: "path"
+        description: "The UUID of the person to retrieve related Events for"
+        required: true
+        type: "string"
       responses:
-        '200':
-          description: List of related Events to a specific Person
+        "200":
+          description: "List of related Events to a specific Person"
           schema:
-            $ref: '#/definitions/Events'
+            $ref: "#/definitions/Events"
         default:
-          description: Unexpected error
+          description: "Unexpected error"
           schema:
-            $ref: '#/definitions/Error'            
+            $ref: "#/definitions/Error"
+      x-swagger-router-controller: "Person"
   /services:
     get:
-      summary: Get a list of available services of the association
-      description: 'Retrieves the names, descriptions, and details of the all services.'
       tags:
-        - service
+      - "service"
+      summary: "Get a list of available services of the association"
+      description: "Retrieves the names, descriptions, and details of the all services."
+      operationId: "servicesGET"
       parameters:
-        - name: offset
-          in: query
-          description: Pagination offset. Default is 0.
-          type: integer
-        - name: limit
-          in: query
-          description: Maximum number of items per page. Default is 5 and cannot exceed 100.
-          type: integer
+      - name: "offset"
+        in: "query"
+        description: "Pagination offset. Default is 0."
+        required: false
+        type: "integer"
+      - name: "limit"
+        in: "query"
+        description: "Maximum number of items per page. Default is 5 and cannot exceed\
+          \ 100."
+        required: false
+        type: "integer"
       responses:
-        '200':
-          description: A collection of services
+        "200":
+          description: "A collection of services"
           schema:
-            $ref: '#/definitions/Services'
+            $ref: "#/definitions/Services"
         default:
-          description: Unexpected error
+          description: "Unexpected error"
           schema:
-            $ref: '#/definitions/Error'
-  '/services/{id}':
+            $ref: "#/definitions/Error"
+      x-swagger-router-controller: "Service"
+  /services/{id}:
     get:
-      summary: Get the details of a Service by ID
-      description: 'Retrieves the name, description, and details of a service by specifying its UUID.'
       tags:
-        - service
+      - "service"
+      summary: "Get the details of a Service by ID"
+      description: "Retrieves the name, description, and details of a service by specifying\
+        \ its UUID."
+      operationId: "servicesIdGET"
       parameters:
-        - name: id
-          in: path
-          description: The UUID of the service to retrieve
-          required: true
-          type: string
+      - name: "id"
+        in: "path"
+        description: "The UUID of the service to retrieve"
+        required: true
+        type: "string"
       responses:
-        '200':
-          description: A service
+        "200":
+          description: "A service"
           schema:
-            $ref: '#/definitions/Service'
+            $ref: "#/definitions/Service"
         default:
-          description: Unexpected error
+          description: "Unexpected error"
           schema:
-            $ref: '#/definitions/Error'
-  '/services/{id}/related_persons':
+            $ref: "#/definitions/Error"
+      x-swagger-router-controller: "Service"
+  /services/{id}/related_persons:
     get:
-      summary: Get the list of Persons Associated with a Service
-      description: Retrieves a list of Persons associated with a specified Service.
       tags:
-        - service
+      - "service"
+      summary: "Get the list of Persons Associated with a Service"
+      description: "Retrieves a list of Persons associated with a specified Service."
+      operationId: "servicesIdRelated_personsGET"
       parameters:
-        - name: id
-          in: path
-          description: The UUID of the service to retrieve Persons for
-          required: true
-          type: string
+      - name: "id"
+        in: "path"
+        description: "The UUID of the service to retrieve Persons for"
+        required: true
+        type: "string"
       responses:
-        '200':
-          description: List of related Persons to a Specific Service
+        "200":
+          description: "List of related Persons to a Specific Service"
           schema:
-            $ref: '#/definitions/Persons'
+            $ref: "#/definitions/Persons"
         default:
-          description: Unexpected error
+          description: "Unexpected error"
           schema:
-            $ref: '#/definitions/Error'
-  '/services/{id}/related_events':
+            $ref: "#/definitions/Error"
+      x-swagger-router-controller: "Service"
+  /services/{id}/related_events:
     get:
-      summary: Get the list of Events Associated with a Service
-      description: Retrieves a collection of Events associated with a specified Service.
       tags:
-        - service
+      - "service"
+      summary: "Get the list of Events Associated with a Service"
+      description: "Retrieves a collection of Events associated with a specified Service."
+      operationId: "servicesIdRelated_eventsGET"
       parameters:
-        - name: id
-          in: path
-          description: The UUID of the service to retrieve related Events for
-          required: true
-          type: string
+      - name: "id"
+        in: "path"
+        description: "The UUID of the service to retrieve related Events for"
+        required: true
+        type: "string"
       responses:
-        '200':
-          description: List of related Events to a specific service
+        "200":
+          description: "List of related Events to a specific service"
           schema:
-            $ref: '#/definitions/Events'
+            $ref: "#/definitions/Events"
         default:
-          description: Unexpected error
+          description: "Unexpected error"
           schema:
-            $ref: '#/definitions/Error'
+            $ref: "#/definitions/Error"
+      x-swagger-router-controller: "Service"
 definitions:
   Events:
-    type: array
+    type: "array"
     items:
-      $ref: '#/definitions/Event'
+      $ref: "#/definitions/Event"
   Event:
     properties:
       id:
-        type: integer
-        description: Universally Unique Identifier for the Event
-        example: 1001
+        type: "integer"
+        description: "Universally Unique Identifier for the Event"
       name:
-        type: string
-        description: Event title
-        example: How to cope with misbehaviour as a parent
+        type: "string"
+        example: "How to cope with misbehaviour as a parent"
+        description: "Event title"
       description:
-        type: string
-        description: Event Description
-        example: In this event we are going to talk about the bad temper of the childrens and how the parents should react to it.
+        type: "string"
+        example: "In this event we are going to talk about the bad temper of the childrens\
+          \ and how the parents should react to it."
+        description: "Event Description"
       photo:
-        type: string
-        description: Photo of the event
-        example: "path of the photo"
+        type: "string"
+        description: "Photo of the event"
       createdAt:
-        type: string
-        format: date-time
-        description: Date and time of creating the event 
+        type: "string"
+        format: "date-time"
+        description: "Date and time of creating the event"
       updatedAt:
-        type: string
-        format: date-time
-        description: Date and time of updating the event
+        type: "string"
+        format: "date-time"
+        description: "Date and time of updating the event"
       enabled:
-        type: boolean
-        description: Is the event enable or not
+        type: "boolean"
+        description: "Is the event enable or not"
       startAt:
-        type: string
-        format: date-time
-        description: Date and time of starting the event 
+        type: "string"
+        format: "date-time"
+        description: "Date and time of starting the event"
       endAt:
-        type: string
-        format: date-time
-        description: Date and time of ending the event 
+        type: "string"
+        format: "date-time"
+        description: "Date and time of ending the event"
+    example:
+      createdAt: "2000-01-23T04:56:07.000+00:00"
+      name: "How to cope with misbehaviour as a parent"
+      description: "In this event we are going to talk about the bad temper of the\
+        \ childrens and how the parents should react to it."
+      photo: "photo"
+      id: 0
+      endAt: "2000-01-23T04:56:07.000+00:00"
+      enabled: true
+      startAt: "2000-01-23T04:56:07.000+00:00"
+      updatedAt: "2000-01-23T04:56:07.000+00:00"
   Persons:
-    type: array
+    type: "array"
     items:
-      $ref: '#/definitions/Person'
+      $ref: "#/definitions/Person"
   Person:
     properties:
       id:
-        type: integer
-        description: Universally Unique Identifier for the Person
-        example: 101
+        type: "integer"
+        description: "Universally Unique Identifier for the Person"
       name:
-        type: string
-        description: Person Name
-        example: Alex
+        type: "string"
+        example: "Alex"
+        description: "Person Name"
       lastname:
-        type: string
-        description: Person last name
-        example: Ridolfex
+        type: "string"
+        example: "Ridolfex"
+        description: "Person last name"
       description:
-        type: string
-        description: Person Description
-        example: Alex is an internal doctor. Specialized for children. 
+        type: "string"
+        example: "Alex is an internal doctor. Specialized for children."
+        description: "Person Description"
       photo:
-        type: string
-        description: Photo of the Person
-        example: 'path to the photo'
+        type: "string"
+        description: "Photo of the Person"
       email:
-        type: string
-        description: Email of the Person.
-        example: 'alex@gmail.com'
+        type: "string"
+        description: "Email of the Person."
       createdAt:
-        type: string
-        format: date-time
-        description: Date and time of creating the person 
+        type: "string"
+        format: "date-time"
+        description: "Date and time of creating the person"
       updatedAt:
-        type: string
-        format: date-time
-        description: Date and time of updating the person information
+        type: "string"
+        format: "date-time"
+        description: "Date and time of updating the person information"
       enabled:
-        type: boolean
-        description: Is the person is active in the association or not
+        type: "boolean"
+        description: "Is the person is active in the association or not"
+    example:
+      createdAt: "2000-01-23T04:56:07.000+00:00"
+      name: "Alex"
+      description: "Alex is an internal doctor. Specialized for children."
+      photo: "photo"
+      id: 0
+      email: "email"
+      enabled: true
+      lastname: "Ridolfex"
+      updatedAt: "2000-01-23T04:56:07.000+00:00"
   Services:
-    type: array
+    type: "array"
     items:
-      $ref: '#/definitions/Service'
+      $ref: "#/definitions/Service"
   Service:
     properties:
       id:
-        type: integer
-        description: Universally Unique Identifier for the Service
-        example: 201
+        type: "integer"
+        description: "Universally Unique Identifier for the Service"
       name:
-        type: string
-        description: Service Name
-        example: How to play with autistic childrens
+        type: "string"
+        example: "How to play with autistic childrens"
+        description: "Service Name"
       description:
-        type: string
-        description: Service Description
-        example: In this service we explain to you how to play with autistic childrens workshop through a lot of examples and workshops. 
+        type: "string"
+        example: "In this service we explain to you how to play with autistic childrens\
+          \ workshop through a lot of examples and workshops."
+        description: "Service Description"
       photo:
-        type: string
-        description: Photo of the Service
-        example: 'path to the photo'
+        type: "string"
+        description: "Photo of the Service"
       createdAt:
-        type: string
-        format: date-time
-        description: Date and time of creating the Service 
+        type: "string"
+        format: "date-time"
+        description: "Date and time of creating the Service"
       updatedAt:
-        type: string
-        format: date-time
-        description: Date and time of updating the Service information
+        type: "string"
+        format: "date-time"
+        description: "Date and time of updating the Service information"
       enabled:
-        type: boolean
-        description: Is the Service is active in the association or not
+        type: "boolean"
+        description: "Is the Service is active in the association or not"
+    example:
+      createdAt: "2000-01-23T04:56:07.000+00:00"
+      name: "How to play with autistic childrens"
+      description: "In this service we explain to you how to play with autistic childrens\
+        \ workshop through a lot of examples and workshops."
+      photo: "photo"
+      id: 0
+      enabled: true
+      updatedAt: "2000-01-23T04:56:07.000+00:00"
   Error:
     properties:
       code:
-        type: integer
+        type: "integer"
       message:
-        type: string
-        example: Something went wrong!
+        type: "string"
+        example: "Something went wrong!"
