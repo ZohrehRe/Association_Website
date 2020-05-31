@@ -20,7 +20,7 @@ fetch('https://hypergroup.herokuapp.com/v1/services/'+id+'/related_events')
     var li0 = document.createElement("li");
     li0.className = "breadcrumb-item";
     li0.setAttribute('aria-current',"page");
-    li0.innerHTML='<a href="services.html">'+Services+'</a>';
+    li0.innerHTML='<a href="services.html">Services</a>';
     bc.appendChild(li0);
 
     var li = document.createElement("li");
