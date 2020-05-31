@@ -15,7 +15,7 @@ fetch('https://hypergroup.herokuapp.com/v1/services/'+id)
 .then(function(response){
     return response.json();
 }).then(function(json){
-        let {id,created_at,updated_at,name,description,photo,enabled} = json[i];
+        let {id,created_at,updated_at,name,description,photo,enabled} = json;
         serviceName=name;
   })
 
