@@ -16,6 +16,7 @@ fetch('https://hypergroup.herokuapp.com/v1/services/'+id)
     return response.json();
 }).then(function(json){
         let {id,created_at,updated_at,name,description,photo,enabled} = json;
+        window.alert(name);
   })
 
     //change title
