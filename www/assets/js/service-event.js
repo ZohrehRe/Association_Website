@@ -39,7 +39,7 @@ fetch('https://hypergroup.herokuapp.com/v1/services/'+id)
         var li2 = document.createElement("li");
             li2.className = "breadcrumb-item active";
             li2.setAttribute('aria-current',"page");
-            li2.innerHTML="events";
+            li2.innerHTML="Related events";
             bc.appendChild(li2);
   })
 
