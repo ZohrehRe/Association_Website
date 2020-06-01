@@ -10,20 +10,20 @@ fetch('https://hypergroup.herokuapp.com/v1/services/'+id+'/related_events')
 }).then(function(json){
 
     //get name
-
+var serviceName;
 fetch('https://hypergroup.herokuapp.com/v1/services/'+id)
 .then(function(response){
     return response.json();
 }).then(function(json){
         let {id,created_at,updated_at,name,description,photo,enabled} = json[0];
-        window.alert(name);
+        serviceName=name;
   })
 
     //change title
     var ti= document.getElementById("title");
-    ti.innerHTML="Events Related To " + name;
+    ti.innerHTML="Events Related To " + serviceName;
     var te= document.getElementById("text");
-    te.innerHTML="Here you can find all events that are related to " + name;
+    te.innerHTML="Here you can find all events that are related to " + serviceName;
 
     //change breadcrumps
     var bc= document.getElementById("bc");
@@ -37,7 +37,7 @@ fetch('https://hypergroup.herokuapp.com/v1/services/'+id)
     var li = document.createElement("li");
     li.className = "breadcrumb-item";
     li.setAttribute('aria-current',"page");
-    li.innerHTML='<a href="service.html?id='+id+'">'+name+'</a>';
+    li.innerHTML='<a href="service.html?id='+id+'">'+serviceName+'</a>';
     bc.appendChild(li);
 
     var li2 = document.createElement("li");
