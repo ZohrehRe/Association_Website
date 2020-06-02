@@ -18,7 +18,7 @@ fetch('https://hypergroup.herokuapp.com/v1/services/'+id)
         //change title
         var ti= document.getElementById("title");
         ti.innerHTML="Events Related To " + name;
-        var te= document.getElementById("text");
+        //var te= document.getElementById("text");
         te.innerHTML="Here you can find all events that are related to " + name;
 
         //change breadcrumps
