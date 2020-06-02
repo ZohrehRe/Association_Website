@@ -19,7 +19,7 @@ fetch('https://hypergroup.herokuapp.com/v1/services/'+id)
         var ti= document.getElementById("title");
         ti.innerHTML="Persons Related To " + name;
 //        var te= document.getElementById("text");
-        te.innerHTML="Here you can find all events that are related to " + name;
+//        te.innerHTML="Here you can find all events that are related to " + name;
 
         //change breadcrumps
         var bc= document.getElementById("bc");
