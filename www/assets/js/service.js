@@ -14,7 +14,6 @@ fetch(url)
         let {id,created_at,updated_at,name,description,photo,enabled,summary,practical} = json[i];
         item.innerHTML=name;
         bcList.appendChild(item);
-        document.getElementById("img").setAttribute('src',"photo");
         document.getElementById("name").innerHTML=name;
         document.getElementById("desc").innerHTML=description;
         document.getElementById("persons-link").setAttribute('href',"service-person.html?id="+id+"/related_persons");
