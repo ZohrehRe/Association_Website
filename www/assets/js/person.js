@@ -15,7 +15,7 @@ fetch(url)
         item.innerHTML=name;
         bcList.appendChild(item);
         document.getElementById("img").setAttribute('src',"photo");
-        document.getElementById("name").innerHTML=name;
+        document.getElementById("name").innerHTML=name+" "+lastname;
         document.getElementById("desc").innerHTML=description;
   }
   })
