@@ -11,7 +11,7 @@ fetch(url)
         item.className = "breadcrumb-item active";
         item.id = "bcID"
         item.setAttribute('aria-current',"page");
-        let {id,created_at,updated_at,name,description,photo,enabled} = json[i];
+        let {id,created_at,updated_at,name,description,photo,enabled,summary,practical} = json[i];
         item.innerHTML=name;
         bcList.appendChild(item);
         document.getElementById("img").setAttribute('src',"photo");
