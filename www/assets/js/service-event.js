@@ -14,7 +14,7 @@ fetch('https://hypergroup.herokuapp.com/v1/services/'+id)
 .then(function(response){
     return response.json();
 }).then(function(json){
-        let {id,created_at,updated_at,name,description,photo,enabled} = json[0];
+        let {id,created_at,updated_at,name,description,photo,enabled,summary,practical} = json[0];
         //change title
         var ti= document.getElementById("title");
         ti.innerHTML="Events Related To " + name;
@@ -48,8 +48,8 @@ fetch('https://hypergroup.herokuapp.com/v1/services/'+id)
     for(var i=0; i<json.length; i++){
         var listItem = document.createElement("li");
         listItem.className = "list-group list-group-flush";
-        let {id,created_at,updated_at,name,description,photo,enabled,startdate,enddate,startmonth} = json[i];
-        listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-2"><img src="..." class="card-img" alt="..."></div><div class="col-md-10"><div id="'+id+'" class="card-body"><a href="event.html?id='+id+'"><h5 class="card-title">'+name+'</h5></a><p class="card-text">'+description+'</p></div></div></div></div>';
+        let {id,created_at,updated_at,name,description,photo,enabled,startdate,enddate,startmonth,summary,practical} = json[i];
+        listItem.innerHTML='<div class="card mb-3" ><div class="row no-gutters"><div class="col-md-12"><div id="'+id+'" class="card-body"><a href="event.html?id='+id+'"><h5 class="card-title">'+name+'</h5></a><p class="card-text">'+summary+'</p></div></div></div></div>';
         eventsList.appendChild(listItem);
   }
   })
