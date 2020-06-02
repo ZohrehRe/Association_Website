@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9a07131-b36e-4f38-ac7d-c19e1d0ab01e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/js/service-person.js" afterPath="$PROJECT_DIR$/www/assets/js/service-person.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/pages/service-person.html" afterPath="$PROJECT_DIR$/www/pages/service-person.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,8 +77,8 @@
       <file leaf-file-name="service-person.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/assets/js/service-person.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="937">
-              <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="46" />
+            <state relative-caret-position="990">
+              <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -86,8 +87,8 @@
       <file leaf-file-name="service-person.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/pages/service-person.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="671">
-              <caret line="71" column="31" lean-forward="false" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+            <state relative-caret-position="830">
+              <caret line="74" column="27" lean-forward="false" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -608,22 +609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/assets/js/service-event.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1007">
-          <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/assets/js/service-person.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="937">
-          <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/pages/service-event.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="537">
@@ -640,10 +625,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/js/service-event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1007">
+          <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/js/service-person.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/pages/service-person.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="71" column="31" lean-forward="false" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+        <state relative-caret-position="830">
+          <caret line="74" column="27" lean-forward="false" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
           <folding />
         </state>
       </provider>

@@ -17,7 +17,7 @@ fetch('https://hypergroup.herokuapp.com/v1/services/'+id)
         let {id,created_at,updated_at,name,description,photo,enabled,summary,practical} = json[0];
         //change title
         var ti= document.getElementById("title");
-        ti.innerHTML="Events Related To " + name;
+        ti.innerHTML="Persons Related To " + name;
         var te= document.getElementById("text");
         te.innerHTML="Here you can find all events that are related to " + name;
 
