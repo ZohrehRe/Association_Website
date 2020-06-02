@@ -11,12 +11,13 @@ fetch(url)
         item.className = "breadcrumb-item active";
         item.id = "bcID"
         item.setAttribute('aria-current',"page");
-        let {id,created_at,updated_at,name,description,photo,enabled} = json[i];
+        let {id,created_at,updated_at,name,description,photo,enabled,startdate,enddate,startmonth,summary,practical} = json[i];
         item.innerHTML=name;
         bcList.appendChild(item);
         document.getElementById("img").setAttribute('src',"photo");
         document.getElementById("name").innerHTML=name;
         document.getElementById("desc").innerHTML=description;
+        document.getElementById("p-info").innerHTML=practical;
   }
   })
 
