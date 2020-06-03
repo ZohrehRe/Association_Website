@@ -1,6 +1,5 @@
 let id= document.location.search.replace(/^.*?\=/,'');
 var ref = document.referrer;
-window.alert(ref);
 var url='https://hypergroup.herokuapp.com/v1/events/'+id;
 var bc= document.getElementById('breadcrumb');
 fetch(url)
@@ -94,33 +93,34 @@ fetch(url)
         }
 
         if(ref.includes("person")){
-             var li0 = document.createElement("li");
-             li0.className = "breadcrumb-item";
-             li0.setAttribute('aria-current',"page");
-             li0.innerHTML='<a href="events.html">Events</a>';
-             bc.appendChild(li0);
+            var eventName = name;
+            let id2= document.location.search.replace(/^.*?\=/,'');
+            fetch('https://hypergroup.herokuapp.com/v1/persons/'+id2)
+            .then(function(response){
+                return response.json();
+            }).then(function(json){
+                    let {id,created_at,updated_at,name,description,photo,enabled,lastname,email, summary} = json[0];
 
-             var li1 = document.createElement("li");
-             li1.className = "breadcrumb-item";
-             li1.setAttribute('aria-current',"page");
-             li1.innerHTML='<a href="eventsByMonth.html">Events By Month</a>';
-             bc.appendChild(li1);
+                    var li0 = document.createElement("li");
+                    li0.className = "breadcrumb-item";
+                    li0.setAttribute('aria-current',"page");
+                    li0.innerHTML='<a href="persons.html">Persons</a>';
+                    bc.appendChild(li0);
 
-             var item = document.createElement("li");
-             item.className = "breadcrumb-item active";
-             item.setAttribute('aria-current',"page");
-             item.innerHTML=name;
-             bc.appendChild(item);
+                    var li = document.createElement("li");
+                    li.className = "breadcrumb-item";
+                    li.setAttribute('aria-current',"page");
+                    li.innerHTML='<a href="person.html?id='+id2+'">'+name+'</a>';
+                    bc.appendChild(li);
+
+                    var item = document.createElement("li");
+                    item.className = "breadcrumb-item active";
+                    item.setAttribute('aria-current',"page");
+                    item.innerHTML=eventName;
+                    bc.appendChild(item);
+              })
         }
   })
-
-//https://hypergroup.herokuapp.com/pages/service-event.html?id=202/related_events
-//https://hypergroup.herokuapp.com/pages/person.html?id=102
-
-
-
-
-
 
 var list= document.getElementById('contacts');
 fetch('https://hypergroup.herokuapp.com/v1/events/'+id+'/related_persons')
