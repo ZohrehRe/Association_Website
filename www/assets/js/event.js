@@ -56,14 +56,14 @@ fetch(url)
 
         if(ref.includes("service-event")){
             let str2= document.location.search.replace(/^.*?\=/,'');
-            var id;
+            var id2;
             var end = str2.lastIndexOf("/");
-            if (end >= 0) { id = str2.substring(0, end); }
-            fetch('https://hypergroup.herokuapp.com/v1/services/'+id)
+            if (end >= 0) { id2 = str2.substring(0, end); }
+            fetch('https://hypergroup.herokuapp.com/v1/services/'+id2)
             .then(function(response){
                 return response.json();
             }).then(function(json){
-                    let {id,created_at,updated_at,name,description,photo,enabled,summary,practical} = json[0];
+                    let {id2,created_at,updated_at,name,description,photo,enabled,summary,practical} = json[0];
 
                     var li0 = document.createElement("li");
                     li0.className = "breadcrumb-item";
@@ -74,13 +74,13 @@ fetch(url)
                     var li = document.createElement("li");
                     li.className = "breadcrumb-item";
                     li.setAttribute('aria-current',"page");
-                    li.innerHTML='<a href="service.html?id='+id+'">'+name+'</a>';
+                    li.innerHTML='<a href="service.html?id='+id2+'">'+name+'</a>';
                     bc.appendChild(li);
 
                     var li2 = document.createElement("li");
                     li2.className = "breadcrumb-item active";
                     li2.setAttribute('aria-current',"page");
-                    li2.innerHTML='<a href="service-event.html?id='+id+'/related_events>'+name+" Related Events"+'</a>';
+                    li2.innerHTML='<a href="service-event.html?id='+id2+'/related_events>'+name+" Related Events"+'</a>';
                     bc.appendChild(li2);
               })
              var item = document.createElement("li");
