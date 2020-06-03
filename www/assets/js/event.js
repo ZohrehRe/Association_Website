@@ -1,4 +1,6 @@
 let id= document.location.search.replace(/^.*?\=/,'');
+var x = document.referrer;
+window.alert(x);
 var url='https://hypergroup.herokuapp.com/v1/events/'+id;
 var bcList= document.getElementById('breadcrumb');
 fetch(url)
