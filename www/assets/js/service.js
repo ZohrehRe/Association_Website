@@ -86,11 +86,4 @@ fetch(url)
               })
         }
 
-        var item = document.createElement("li");
-        item.className = "breadcrumb-item active";
-        item.id = "bcID"
-        item.setAttribute('aria-current',"page");
-        item.innerHTML=name;
-        bcList.appendChild(item);
-
   })
