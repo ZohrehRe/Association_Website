@@ -55,18 +55,34 @@ fetch(url)
         }
 
         if(ref.includes("service-event")){
-             var li0 = document.createElement("li");
-             li0.className = "breadcrumb-item";
-             li0.setAttribute('aria-current',"page");
-             li0.innerHTML='<a href="events.html">Events</a>';
-             bc.appendChild(li0);
+            let str2= document.location.search.replace(/^.*?\=/,'');
+            var id;
+            var end = str2.lastIndexOf("/");
+            if (end >= 0) { id = str2.substring(0, end); }
+            fetch('https://hypergroup.herokuapp.com/v1/services/'+id)
+            .then(function(response){
+                return response.json();
+            }).then(function(json){
+                    let {id,created_at,updated_at,name,description,photo,enabled,summary,practical} = json[0];
 
-             var li1 = document.createElement("li");
-             li1.className = "breadcrumb-item";
-             li1.setAttribute('aria-current',"page");
-             li1.innerHTML='<a href="eventsByMonth.html">Events By Month</a>';
-             bc.appendChild(li1);
+                    var li0 = document.createElement("li");
+                    li0.className = "breadcrumb-item";
+                    li0.setAttribute('aria-current',"page");
+                    li0.innerHTML='<a href="services.html">Services</a>';
+                    bc.appendChild(li0);
 
+                    var li = document.createElement("li");
+                    li.className = "breadcrumb-item";
+                    li.setAttribute('aria-current',"page");
+                    li.innerHTML='<a href="service.html?id='+id+'">'+name+'</a>';
+                    bc.appendChild(li);
+
+                    var li2 = document.createElement("li");
+                    li2.className = "breadcrumb-item active";
+                    li2.setAttribute('aria-current',"page");
+                    li2.innerHTML='<a href="service-event.html?id='+id+'/related_events>'+name+" Related Events"+'</a>';
+                    bc.appendChild(li2);
+              })
              var item = document.createElement("li");
              item.className = "breadcrumb-item active";
              item.setAttribute('aria-current',"page");
@@ -93,23 +109,6 @@ fetch(url)
              item.innerHTML=name;
              bc.appendChild(item);
         }
-
-/*
-        var li = document.createElement("li");
-        li.className = "breadcrumb-item";
-        li.setAttribute('aria-current',"page");
-        li.innerHTML='<a href="service.html?id='+id+'">'+name+'</a>';
-        bc.appendChild(li);
-
-        var li2 = document.createElement("li");
-            li2.className = "breadcrumb-item active";
-            li2.setAttribute('aria-current',"page");
-            li2.innerHTML="Related persons";
-            bc.appendChild(li2);*/
-
-
-
-
   })
 
 //https://hypergroup.herokuapp.com/pages/service-event.html?id=202/related_events
