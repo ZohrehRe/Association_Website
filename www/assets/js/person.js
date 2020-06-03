@@ -12,7 +12,7 @@ fetch(url)
     document.getElementById("name").innerHTML=name+" "+lastname;
     document.getElementById("desc").innerHTML=description;
 
-        if(ref.includes("persons")){
+        if(ref.includes("/persons")){
              var li0 = document.createElement("li");
              li0.className = "breadcrumb-item";
              li0.setAttribute('aria-current',"page");
@@ -82,7 +82,7 @@ fetch(url)
                             var li2 = document.createElement("li");
                             li2.className = "breadcrumb-item active";
                             li2.setAttribute('aria-current',"page");
-                            li2.innerHTML='<a href="service-event.html?id='+id2+'/related_events">'+name+' Related Events</a>';
+                            li2.innerHTML='<a href="service-event.html?id='+id2+'/related_events">'+name+' Related Persons</a>';
                             bc.appendChild(li2);
 
                             var item = document.createElement("li");
