@@ -55,6 +55,7 @@ fetch(url)
         }
 
         if(ref.includes("service-event")){
+            var eventName = name;
             let str2= ref.replace(/^.*?\=/,'');
             var id2;
             var end = str2.lastIndexOf("/");
@@ -80,13 +81,13 @@ fetch(url)
                     var li2 = document.createElement("li");
                     li2.className = "breadcrumb-item active";
                     li2.setAttribute('aria-current',"page");
-                    li2.innerHTML='<a href="service-event.html?id='+id2+'/related_events>'+name+" Related Events"+'</a>';
+                    li2.innerHTML='<a href="service-event.html?id='+id2+'/related_events">'+name+' Related Events</a>';
                     bc.appendChild(li2);
 
                     var item = document.createElement("li");
                     item.className = "breadcrumb-item active";
                     item.setAttribute('aria-current',"page");
-                    item.innerHTML=name;
+                    item.innerHTML=eventName;
                     bc.appendChild(item);
               })
 
