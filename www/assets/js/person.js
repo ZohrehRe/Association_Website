@@ -1,3 +1,4 @@
+var ref = document.referrer;
 let id= document.location.search.replace(/^.*?\=/,'');
 var url='https://hypergroup.herokuapp.com/v1/persons/'+id;
 var bc= document.getElementById('breadcrumb');
