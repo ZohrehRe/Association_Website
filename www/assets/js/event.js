@@ -94,7 +94,7 @@ fetch(url)
 
         if(ref.includes("person")){
             var eventName = name;
-            let id2= document.location.search.replace(/^.*?\=/,'');
+            let id2= ref.replace(/^.*?\=/,'');
             fetch('https://hypergroup.herokuapp.com/v1/persons/'+id2)
             .then(function(response){
                 return response.json();
