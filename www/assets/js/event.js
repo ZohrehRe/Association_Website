@@ -1,8 +1,7 @@
 let id= document.location.search.replace(/^.*?\=/,'');
 var ref = document.referrer;
-var url='https://hypergroup.herokuapp.com/v1/events/'+id;
 var bc= document.getElementById('breadcrumb');
-fetch(url)
+fetch('https://hypergroup.herokuapp.com/v1/events/'+id)
 .then(function(response){
     var a=response.json();
     return a;
@@ -110,7 +109,7 @@ fetch(url)
                     var li = document.createElement("li");
                     li.className = "breadcrumb-item";
                     li.setAttribute('aria-current',"page");
-                    li.innerHTML='<a href="person.html?id='+id2+'">'+name+'</a>';
+                    li.innerHTML='<a href="person.html?id='+id2+'">'+name+" "+lastname+'</a>';
                     bc.appendChild(li);
 
                     var item = document.createElement("li");
