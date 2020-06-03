@@ -55,7 +55,7 @@ fetch(url)
         }
 
         if(ref.includes("service-event")){
-            let str2= document.location.search.replace(/^.*?\=/,'');
+            let str2= ref.replace(/^.*?\=/,'');
             var id2;
             var end = str2.lastIndexOf("/");
             if (end >= 0) { id2 = str2.substring(0, end); }
