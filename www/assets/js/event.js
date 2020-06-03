@@ -82,12 +82,14 @@ fetch(url)
                     li2.setAttribute('aria-current',"page");
                     li2.innerHTML='<a href="service-event.html?id='+id2+'/related_events>'+name+" Related Events"+'</a>';
                     bc.appendChild(li2);
+
+                    var item = document.createElement("li");
+                    item.className = "breadcrumb-item active";
+                    item.setAttribute('aria-current',"page");
+                    item.innerHTML=name;
+                    bc.appendChild(item);
               })
-             var item = document.createElement("li");
-             item.className = "breadcrumb-item active";
-             item.setAttribute('aria-current',"page");
-             item.innerHTML=name;
-             bc.appendChild(item);
+
         }
 
         if(ref.includes("person")){
