@@ -63,7 +63,7 @@ fetch(url)
             .then(function(response){
                 return response.json();
             }).then(function(json){
-                    let {id2,created_at,updated_at,name,description,photo,enabled,summary,practical} = json[0];
+                    let {id,created_at,updated_at,name,description,photo,enabled,summary,practical} = json[0];
 
                     var li0 = document.createElement("li");
                     li0.className = "breadcrumb-item";
