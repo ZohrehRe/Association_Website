@@ -33,7 +33,7 @@ fetch('https://hypergroup.herokuapp.com/v1/events/'+id)
              bc.appendChild(item);
         }
 
-        if(ref.includes("eventsByMonth")){
+        else if(ref.includes("eventsByMonth")){
              var li0 = document.createElement("li");
              li0.className = "breadcrumb-item";
              li0.setAttribute('aria-current',"page");
@@ -53,7 +53,7 @@ fetch('https://hypergroup.herokuapp.com/v1/events/'+id)
              bc.appendChild(item);
         }
 
-        if(ref.includes("service-event")){
+        else if(ref.includes("service-event")){
             var eventName = name;
             let str2= ref.replace(/^.*?\=/,'');
             var id2;
@@ -92,7 +92,7 @@ fetch('https://hypergroup.herokuapp.com/v1/events/'+id)
 
         }
 
-        if(ref.includes("person")){
+        else if(ref.includes("person")){
             var eventName = name;
             let id2= ref.replace(/^.*?\=/,'');
             fetch('https://hypergroup.herokuapp.com/v1/persons/'+id2)
@@ -119,9 +119,7 @@ fetch('https://hypergroup.herokuapp.com/v1/events/'+id)
                     item.innerHTML=eventName;
                     bc.appendChild(item);
               })
-        }
-
-        else{
+        } else{
                      var li0 = document.createElement("li");
                      li0.className = "breadcrumb-item";
                      li0.setAttribute('aria-current',"page");
