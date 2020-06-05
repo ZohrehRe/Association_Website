@@ -8,6 +8,7 @@ fetch(url)
     return a;
 }).then(function(json){
         let {id,created_at,updated_at,name,description,photo,enabled,summary,practical} = json[0];
+        document.getElementById("title").innerHTML=name;
         document.getElementById("name").innerHTML=name;
         document.getElementById("desc").innerHTML=description;
         document.getElementById("persons-link").setAttribute('href',"service-person.html?id="+id+"/related_persons");

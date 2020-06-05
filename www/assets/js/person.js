@@ -8,6 +8,7 @@ fetch(url)
     return a;
 }).then(function(json){
     let {id,created_at,updated_at,name,description,photo,enabled,lastname,email, summary} = json[0];
+    document.getElementById("title").innerHTML=name+" "+lastname;
     document.getElementById("img").setAttribute('src',photo);
     document.getElementById("img").setAttribute('alt','photo of '+lastname)
     document.getElementById("name").innerHTML=name+" "+lastname;
