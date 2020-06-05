@@ -29,7 +29,7 @@ fetch(url)
              bc.appendChild(item);
         }
 
-        else if(ref.includes("event")){
+        else if(ref.includes("/event")){
             var serviceName = name;
             let id2= ref.replace(/^.*?\=/,'');
             fetch('https://hypergroup.herokuapp.com/v1/events/'+id2)
