@@ -61,7 +61,7 @@
 <td>Member</td>
 <td>Zohreh</td>
 <td>Rezayat</td>
-<td></td>
+<td>917926</td>
 <td><a href="mailto:zohreh.rezayat@mail.polimi.it" target="_blank" rel="noopener">zohreh.rezayat@mail.polimi.it</a></td>
 </tr>
 </tbody>
@@ -70,7 +70,7 @@
 <li>Deliverable D2: the YAML or JSON file containing the specification of the app API can be found at <a href="https://hypergroup.herokuapp.com/backend/spec.yaml" target="_blank" rel="noopener">this address</a>.</li>
 <li>Deliverable D3: the SwaggerUI page of the same API is available at <a href="https://hypergroup.herokuapp.com/docs" target="_blank" rel="noopener">this address</a>.</li>
 <li>Deliverable D4: the source code of D0 is available as a zip file at <a href="https://hypergroup.herokuapp.com/backend/app.zip" target="_blank" rel="noopener">this address</a>.</li>
-<li>Deliverable D5: the address of the online source control repository is available <a href="https://examplegit.com" target="_blank" rel="noopener">this address</a>. We hereby declare that this is a private repository and, upon request, we will give access to the instructors.</li>
+<li>Deliverable D5: the address of the online source control repository is available <a href="https://bitbucket.org/mehdikhani/hypergroup/" target="_blank" rel="noopener">this address</a>. We hereby declare that this is a private repository and, upon request, we will give access to the instructors.</li>
 </ul><h2 id="Specification"><a class="anchor hidden-xs" href="#Specification" title="Specification"><span class="octicon octicon-link"></span></a>Specification</h2><h3 id="Web-Architecture"><a class="anchor hidden-xs" href="#Web-Architecture" title="Web-Architecture"><span class="octicon octicon-link"></span></a>Web Architecture</h3><p>In this website we tried to follow the exact structure discussed in the Hypermedia course (the following picture):<br>
 <img src="https://i.imgur.com/xLkCjWX.png" alt=""></p><p>In the application layer, we have several services to extract the desired data from the database. These services are at the client’s disposal using the already defined REST API handles. When a user requests a specific kind of data through the REST API the application layer acts as a controller to get the request, produce the appropriate query for the database, get the data and return it to the user to fulfill the service purpose.</p><p>In our application layer, we are using the “serve-static” module of nodejs to deliver the “www” folder of the website to the client browser as a static asset and ensure that the HTML files are not rendered in the server-side.</p><p>The data-layer is consists of a Postgres database to store the data and a program in the application layer to connect to the database and execute the desired queries.</p><p>For the presentation layer, besides the HTML, CSS, and JavaScript we are also using the Bootstrap framework to present the final data coming from database and also static data present in the HTML files to the user and also produce the appropriate REST-API commands based on the user needs and inputs.</p><h3 id="API"><a class="anchor hidden-xs" href="#API" title="API"><span class="octicon octicon-link"></span></a>API</h3><h4 id="REST-compliance"><a class="anchor hidden-xs" href="#REST-compliance" title="REST-compliance"><span class="octicon octicon-link"></span></a>REST compliance</h4><p>During the planning and implementation of the API, we tried to adhere to the REST principles as much as possible. In our API since each resource has its own URI and requests are done by leveraging GET verb of HTML, according to the Richardson maturity model this Web API is at Level 1 of compliant with REST.</p><p>The general scheme that we tried to follow during designing of the API is as follow (considering the events of the association as an example):</p><p>First, we should have a path to get all the events:<br>
 <code>/events</code> -&gt; returns a collection of events.<br>
@@ -136,23 +136,23 @@ The OpenAPI data model is designed to be exactly compatible with the database. I
             <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
                 <div class="toc"><ul class="nav">
 <li class=""><a href="#Documentation-of-the-Backend-part" title="Documentation of the Backend part">Documentation of the Backend part</a><ul class="nav">
-<li><a href="#General-group-information" title="General group information">General group information</a></li>
-<li><a href="#Links-to-other-deliverables" title="Links to other deliverables">Links to other deliverables</a></li>
-<li><a href="#Specification" title="Specification">Specification</a><ul class="nav">
-<li><a href="#Web-Architecture" title="Web Architecture">Web Architecture</a></li>
-<li><a href="#API" title="API">API</a></li>
-<li><a href="#Data-model" title="Data model">Data model</a></li>
+<li class=""><a href="#General-group-information" title="General group information">General group information</a></li>
+<li class=""><a href="#Links-to-other-deliverables" title="Links to other deliverables">Links to other deliverables</a></li>
+<li class=""><a href="#Specification" title="Specification">Specification</a><ul class="nav">
+<li class=""><a href="#Web-Architecture" title="Web Architecture">Web Architecture</a></li>
+<li class=""><a href="#API" title="API">API</a></li>
+<li class=""><a href="#Data-model" title="Data model">Data model</a></li>
 </ul>
 </li>
 <li class=""><a href="#Implementation" title="Implementation">Implementation</a><ul class="nav">
-<li><a href="#Tools-used" title="Tools used">Tools used</a></li>
+<li class=""><a href="#Tools-used" title="Tools used">Tools used</a></li>
 <li class=""><a href="#Discussion" title="Discussion">Discussion</a></li>
 </ul>
 </li>
-<li><a href="#Other-information" title="Other information">Other information</a><ul class="nav">
+<li class=""><a href="#Other-information" title="Other information">Other information</a><ul class="nav">
 <li><a href="#Task-assignment" title="Task assignment">Task assignment</a></li>
 <li><a href="#Analysis-of-existing-API" title="Analysis of existing API">Analysis of existing API</a></li>
-<li><a href="#Learning-outcome" title="Learning outcome">Learning outcome</a></li>
+<li class=""><a href="#Learning-outcome" title="Learning outcome">Learning outcome</a></li>
 </ul>
 </li>
 </ul>
@@ -165,23 +165,23 @@ The OpenAPI data model is designed to be exactly compatible with the database. I
     <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
         <div class="toc"><ul class="nav">
 <li class=""><a href="#Documentation-of-the-Backend-part" title="Documentation of the Backend part">Documentation of the Backend part</a><ul class="nav">
-<li><a href="#General-group-information" title="General group information">General group information</a></li>
-<li><a href="#Links-to-other-deliverables" title="Links to other deliverables">Links to other deliverables</a></li>
-<li><a href="#Specification" title="Specification">Specification</a><ul class="nav">
-<li><a href="#Web-Architecture" title="Web Architecture">Web Architecture</a></li>
-<li><a href="#API" title="API">API</a></li>
-<li><a href="#Data-model" title="Data model">Data model</a></li>
+<li class=""><a href="#General-group-information" title="General group information">General group information</a></li>
+<li class=""><a href="#Links-to-other-deliverables" title="Links to other deliverables">Links to other deliverables</a></li>
+<li class=""><a href="#Specification" title="Specification">Specification</a><ul class="nav">
+<li class=""><a href="#Web-Architecture" title="Web Architecture">Web Architecture</a></li>
+<li class=""><a href="#API" title="API">API</a></li>
+<li class=""><a href="#Data-model" title="Data model">Data model</a></li>
 </ul>
 </li>
 <li class=""><a href="#Implementation" title="Implementation">Implementation</a><ul class="nav">
-<li><a href="#Tools-used" title="Tools used">Tools used</a></li>
+<li class=""><a href="#Tools-used" title="Tools used">Tools used</a></li>
 <li class=""><a href="#Discussion" title="Discussion">Discussion</a></li>
 </ul>
 </li>
-<li><a href="#Other-information" title="Other information">Other information</a><ul class="nav">
+<li class=""><a href="#Other-information" title="Other information">Other information</a><ul class="nav">
 <li><a href="#Task-assignment" title="Task assignment">Task assignment</a></li>
 <li><a href="#Analysis-of-existing-API" title="Analysis of existing API">Analysis of existing API</a></li>
-<li><a href="#Learning-outcome" title="Learning outcome">Learning outcome</a></li>
+<li class=""><a href="#Learning-outcome" title="Learning outcome">Learning outcome</a></li>
 </ul>
 </li>
 </ul>
