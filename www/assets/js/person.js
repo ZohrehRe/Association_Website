@@ -8,7 +8,7 @@ fetch(url)
     return a;
 }).then(function(json){
     let {id,created_at,updated_at,name,description,photo,enabled,lastname,email, summary} = json[0];
-    document.getElementById("svg").setAttribute('src',"photo");
+    document.getElementById("img").setAttribute('src',"photo");
     document.getElementById("name").innerHTML=name+" "+lastname;
     document.getElementById("desc").innerHTML=description;
 
