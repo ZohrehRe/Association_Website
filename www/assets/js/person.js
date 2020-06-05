@@ -95,6 +95,19 @@ fetch(url)
                       })
 
                 }
+                else{
+                             var li0 = document.createElement("li");
+                             li0.className = "breadcrumb-item";
+                             li0.setAttribute('aria-current',"page");
+                             li0.innerHTML='<a href="persons.html">Persons</a>';
+                             bc.appendChild(li0);
+
+                             var item = document.createElement("li");
+                             item.className = "breadcrumb-item active";
+                             item.setAttribute('aria-current',"page");
+                             item.innerHTML=name+" "+lastname;
+                             bc.appendChild(item);
+                        }
   })
 
 

@@ -120,6 +120,26 @@ fetch('https://hypergroup.herokuapp.com/v1/events/'+id)
                     bc.appendChild(item);
               })
         }
+
+        else{
+                     var li0 = document.createElement("li");
+                     li0.className = "breadcrumb-item";
+                     li0.setAttribute('aria-current',"page");
+                     li0.innerHTML='<a href="events.html">Events</a>';
+                     bc.appendChild(li0);
+
+                     var li1 = document.createElement("li");
+                     li1.className = "breadcrumb-item";
+                     li1.setAttribute('aria-current',"page");
+                     li1.innerHTML='<a href="allEvents.html">All Events</a>';
+                     bc.appendChild(li1);
+
+                     var item = document.createElement("li");
+                     item.className = "breadcrumb-item active";
+                     item.setAttribute('aria-current',"page");
+                     item.innerHTML=name;
+                     bc.appendChild(item);
+                }
   })
 
 var list= document.getElementById('contacts');
