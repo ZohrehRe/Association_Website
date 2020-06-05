@@ -29,7 +29,7 @@ fetch(url)
              bc.appendChild(item);
         }
 
-        if(ref.includes("event")){
+        else if(ref.includes("/event")){
             var serviceName = name;
             let id2= ref.replace(/^.*?\=/,'');
             fetch('https://hypergroup.herokuapp.com/v1/events/'+id2)
@@ -58,7 +58,7 @@ fetch(url)
               })
         }
 
-        if(ref.includes("person")){
+        else if(ref.includes("person")){
             var serviceName = name;
             let id2= ref.replace(/^.*?\=/,'');
             fetch('https://hypergroup.herokuapp.com/v1/persons/'+id2)
@@ -86,5 +86,18 @@ fetch(url)
                     bc.appendChild(item);
               })
         }
+        else{
+                     var li0 = document.createElement("li");
+                     li0.className = "breadcrumb-item";
+                     li0.setAttribute('aria-current',"page");
+                     li0.innerHTML='<a href="services.html">Services</a>';
+                     bc.appendChild(li0);
+
+                     var item = document.createElement("li");
+                     item.className = "breadcrumb-item active";
+                     item.setAttribute('aria-current',"page");
+                     item.innerHTML=name;
+                     bc.appendChild(item);
+                }
 
   })

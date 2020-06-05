@@ -28,7 +28,7 @@ fetch(url)
              bc.appendChild(item);
         }
 
-        if(ref.includes("event")){
+        else if(ref.includes("/event")){
             var personName = name+" "+lastname;
             let id2= ref.replace(/^.*?\=/,'');
             fetch('https://hypergroup.herokuapp.com/v1/events/'+id2)
@@ -57,7 +57,7 @@ fetch(url)
               })
         }
 
-        if(ref.includes("service-person")){
+        else if(ref.includes("service-person")){
                     var personName = name+" "+lastname;
                     let str2= ref.replace(/^.*?\=/,'');
                     var id2;
@@ -95,6 +95,19 @@ fetch(url)
                       })
 
                 }
+                else{
+                             var li0 = document.createElement("li");
+                             li0.className = "breadcrumb-item";
+                             li0.setAttribute('aria-current',"page");
+                             li0.innerHTML='<a href="persons.html">Persons</a>';
+                             bc.appendChild(li0);
+
+                             var item = document.createElement("li");
+                             item.className = "breadcrumb-item active";
+                             item.setAttribute('aria-current',"page");
+                             item.innerHTML=name+" "+lastname;
+                             bc.appendChild(item);
+                        }
   })
 
 
